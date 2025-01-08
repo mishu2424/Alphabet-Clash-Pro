@@ -1,15 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alphabet-Clash-Pro</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins h-auto bg-[#010313] m-0">
     <header></header>
-    <main></main>
+    <main class="h-screen mx-auto">
+      <section
+      id="homePage"
+        class="w-[70vw] mx-auto h-full flex items-center justify-center flex-col space-y-3 bg-[url('./images/background.png')] bg-center bg-contain bg-no-repeat"
+      >
+        <h1 class="text-8xl uppercase text-white">Alphabet Clash</h1>
+        <p class="text-xs text-white opacity-90">
+          Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+        </p>
+        <a class="btn px-6" id="playNowBtn">Play Now</a>
+      </section>
+      <section
+      id="menuPage"
+        class="w-[70vw] mx-auto h-full flex items-center justify-center flex-col space-y-3 bg-[url('./images/background.png')] bg-center bg-contain bg-no-repeat hidden"
+      >
+        <div class="playground-container w-[70%] flex flex-col space-y-5">
+          <div
+            class="playboard w-full h-72 mx-auto border-gray-600 rounded-xl bg-opacity-50 bg-white backdrop-blur-sm border-8"
+          >
+            <p
+              class="bg-gray-600 text-white text-center w-[340px] whitespace-nowrap text-sm mx-auto rounded-b-lg font-medium py-2"
+            >
+              Don't watch keyboard while playing...
+            </p>
+            <div
+              class="typed-letters w-full h-full flex items-center justify-center"
+            >
+              <h1 class="text-8xl text-black font-bold m-0 p-0">Y</h1>
+            </div>
+          </div>
+          <div class="keyboard">
+            <div class="my-1 flex w-full justify-center gap-1">
+              <kbd class="kbd">q</kbd>
+              <kbd class="kbd">w</kbd>
+              <kbd class="kbd">e</kbd>
+              <kbd class="kbd">r</kbd>
+              <kbd class="kbd">t</kbd>
+              <kbd class="kbd">y</kbd>
+              <kbd class="kbd">u</kbd>
+              <kbd class="kbd">i</kbd>
+              <kbd class="kbd">o</kbd>
+              <kbd class="kbd">p</kbd>
+            </div>
+            <div class="my-1 flex w-full justify-center gap-1">
+              <kbd class="kbd">a</kbd>
+              <kbd class="kbd">s</kbd>
+              <kbd class="kbd">d</kbd>
+              <kbd class="kbd">f</kbd>
+              <kbd class="kbd">g</kbd>
+              <kbd class="kbd">h</kbd>
+              <kbd class="kbd">j</kbd>
+              <kbd class="kbd">k</kbd>
+              <kbd class="kbd">l</kbd>
+            </div>
+            <div class="my-1 flex w-full justify-center gap-1">
+              <kbd class="kbd">z</kbd>
+              <kbd class="kbd">x</kbd>
+              <kbd class="kbd">c</kbd>
+              <kbd class="kbd">v</kbd>
+              <kbd class="kbd">b</kbd>
+              <kbd class="kbd">n</kbd>
+              <kbd class="kbd">m</kbd>
+              <kbd class="kbd">/</kbd>
+            </div>
+          </div>
+          <div class="buttons flex items-center justify-between">
+            <a class="btn px-6 bg-[#894189] rounded-full text-white border-none"
+              >Life
+              <img
+                class="w-5"
+                src="./images/hearticon.svg"
+                alt=""
+                srcset=""
+              /><span> 1 </span>
+            </a>
+            <a class="btn px-6 bg-[#360490] rounded-full text-white border-none"
+              >Score <i class="ri-money-dollar-circle-fill"></i> 1
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="scorepage w-[70vw] mx-auto h-full flex items-center justify-center flex-col space-y-3 bg-[url('./images/background.png')] bg-center bg-contain bg-no-repeat hidden"
+      >
+        <div class="score-container text-white text-center p-4 space-y-4 rounded-lg bg-[#FFFFFF33]">
+            <h1 class="text-7xl"> <span class="font-bold">Score: </span> 14</h1>
+            <a class="btn px-6">Play Now</a>
+            <p class="text-sm">Practice will make you Pro</p>
+        </div>
+    </section>
+    </main>
     <footer></footer>
-</body>
+    <!-- all common functions -->
+    <script src="./js/utility.js"></script>
+    <!-- main file -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
